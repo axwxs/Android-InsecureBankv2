@@ -43,7 +43,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.marcohc.toasteroid.Toasteroid;
+//import com.android.insecurebankv2.R;
+
 
 /*
 The page that allows the user to transfer an amount between two accounts
@@ -191,7 +192,7 @@ public class DoTransfer extends Activity {
 					AsyncHttpTransferPost("result");
 					if (result != null) {
 						if (result.indexOf("Success") != -1) {
-                            Toasteroid.show(DoTransfer.this, "Transfer Successful!!", Toasteroid.STYLES.SUCCESS, Toasteroid.LENGTH_SHORT);
+                            // Toasteroid.show(DoTransfer.this, "Transfer Successful!!", Toasteroid.STYLES.SUCCESS, Toasteroid.LENGTH_SHORT);
 
                             try {
 								jsonObject = new JSONObject(result);
@@ -214,7 +215,7 @@ public class DoTransfer extends Activity {
 								e.printStackTrace();
 							}
 						} else {
-                            Toasteroid.show(DoTransfer.this, "Transfer Failed!!", Toasteroid.STYLES.ERROR, Toasteroid.LENGTH_SHORT);
+                            // Toasteroid.show(DoTransfer.this, "Transfer Failed!!", Toasteroid.STYLES.ERROR, Toasteroid.LENGTH_SHORT);
 
 
                             System.out.println("Message:" + "Failure" + " From:" + from.getText().toString() + " To:" + to.getText().toString() + " Amount:" + amount.getText().toString());
@@ -398,15 +399,15 @@ public class DoTransfer extends Activity {
 				//Write your logic here
 				this.finish();
 				return true;
-			case R.id.action_settings:
-				callPreferences();
-				return true;
-
-			case R.id.action_exit:
-				Intent i = new Intent(getBaseContext(), LoginActivity.class);
-				i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-				startActivity(i);
-				return true;
+//			case R.id.action_settings:
+//				callPreferences();
+//				return true;
+//
+//			case R.id.action_exit:
+//				Intent i = new Intent(getBaseContext(), LoginActivity.class);
+//				i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+//				startActivity(i);
+//				return true;
 
 			default:
 				return super.onOptionsItemSelected(item);
@@ -420,3 +421,4 @@ public class DoTransfer extends Activity {
 		startActivity(i);
 	}
 }
+

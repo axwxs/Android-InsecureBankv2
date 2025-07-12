@@ -1,3 +1,7 @@
+# IDE
+.vscode
+.idea
+
 # DS_Store and Thumbsdb crap stay away
 .DS_Store
 Thumbs.db

@@ -21,9 +21,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.android.insecurebankv2.DoLogin;
-import com.marcohc.toasteroid.Toasteroid;
-
 /*
 The page that accepts username and the password from the user. The credentials 
 are then sent to the server and the user is allowed to proceed to the postlogin
@@ -114,7 +111,7 @@ public class LoginActivity extends Activity {
     ToDo: Add functionality here.
     */
     protected void createUser() {
-        Toasteroid.show(this, "Create User functionality is still Work-In-Progress!!", Toasteroid.STYLES.WARNING, Toasteroid.LENGTH_LONG);
+        //Toasteroid.show(this, "Create User functionality is still Work-In-Progress!!", Toasteroid.STYLES.WARNING, Toasteroid.LENGTH_LONG);
 
     }
 

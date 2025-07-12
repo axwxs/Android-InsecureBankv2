@@ -10,7 +10,7 @@ import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.widget.Toast;
 
-import com.marcohc.toasteroid.Toasteroid;
+//import com.marcohc.toasteroid.Toasteroid;
 
 import java.io.File;
 
@@ -46,7 +46,7 @@ public class ViewStatement extends Activity {
 		{
 			Intent gobacktoPostLogin =new Intent(this,PostLogin.class);
 			startActivity(gobacktoPostLogin);
-			Toasteroid.show(this, "Statement does not Exist!!", Toasteroid.STYLES.WARNING, Toasteroid.LENGTH_SHORT);
+//			Toasteroid.show(this, "Statement does not Exist!!", Toasteroid.STYLES.WARNING, Toasteroid.LENGTH_SHORT);
 
 		}
 

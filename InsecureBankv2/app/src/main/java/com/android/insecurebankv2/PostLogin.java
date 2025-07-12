@@ -18,7 +18,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.ArrayList;
-import com.marcohc.toasteroid.Toasteroid;
 
 
 /*
@@ -89,11 +88,11 @@ public class PostLogin extends Activity {
 		Boolean isEmulator = checkIfDeviceIsEmulator();
 		if(isEmulator==true)
 		{
-			Toasteroid.show(this, "Application running on Emulator", Toasteroid.STYLES.ERROR, Toasteroid.LENGTH_LONG);
+			// Toasteroid.show(this, "Application running on Emulator", Toasteroid.STYLES.ERROR, Toasteroid.LENGTH_LONG);
 		}
 		else
 		{
-			Toasteroid.show(this, "Application running on Real device", Toasteroid.STYLES.SUCCESS, Toasteroid.LENGTH_LONG);
+			// Toasteroid.show(this, "Application running on Real device", Toasteroid.STYLES.SUCCESS, Toasteroid.LENGTH_LONG);
 		}
 	}
 
